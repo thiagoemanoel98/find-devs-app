@@ -1,5 +1,6 @@
-const ACCESS_TOKEN_MAP_BOX =
-  "access_token=pk.eyJ1IjoidGhpYWdvZW1hbm9lbDk4IiwiYSI6ImNsNTBhbXdjYzBsaTMzanA4emF0c252c24ifQ.uELWYdIvpvgQHV-gexw2iA";
+import { access_token } from "@env";
+
+const ACCESS_TOKEN_MAP_BOX = `access_token=${access_token}`;
 
 export const fetchLocalMapBox = (local: string) =>
   fetch(
